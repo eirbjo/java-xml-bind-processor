@@ -18,11 +18,8 @@ public class ProcessorUsingJavaXmlBind extends AbstractProcessor{
     @Override
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
 
-        try {
-            System.out.println(JAXBContext.newInstance(getClass()));
-        } catch (JAXBException e) {
-            e.printStackTrace();
-        }
+        System.out.println(JAXBContext.class);
+
         return false;
     }
 }
